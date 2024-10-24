@@ -1,0 +1,70 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#4E6EFF">
+
+    <!-- Judul Aplikasi -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Catat Pemasukkan"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#FFD700"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Input Jumlah Uang -->
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan jumlah uang"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#D3D3D3" />
+
+    <!-- Input Tanggal -->
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hari/Tanggal/Tahun"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#D3D3D3" />
+
+    <!-- Input Tujuan Pengeluaran -->
+    <EditText
+        android:id="@+id/etReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tujuan pengeluaran"
+        android:inputType="text"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#D3D3D3" />
+
+    <!-- Tombol Submit -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#1E90FF"
+        android:textStyle="bold"
+        android:backgroundTint="#FFFFFF" />
+
+    <!-- Tempat untuk menampilkan data yang sudah di-submit -->
+    <LinearLayout
+        android:id="@+id/dataContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFFFFF"/>
+
+</LinearLayout>
